@@ -1,0 +1,97 @@
+﻿<Window x:Class="Cursach.ShowTable"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cursach"
+        mc:Ignorable="d"
+        Title="ShowTable"
+        Height="450"
+        Width="800"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+
+        <Style x:Key="TextBlockStyle"
+               TargetType="TextBlock">
+            <Setter Property="FontFamily"
+                    Value="Calibri"></Setter>
+            <Setter Property="FontWeight"
+                    Value="Regular"></Setter>
+            <Setter Property="Foreground"
+                    Value="Black"></Setter>
+        </Style>
+
+
+        <Style x:Key="DStyle"
+               TargetType="DataGrid">
+
+
+        </Style>
+
+
+
+
+    </Window.Resources>
+
+    
+
+
+        <Grid>
+
+
+            <Border Padding="10"
+                    Grid.ColumnSpan="2">
+
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition />
+                    <RowDefinition  Height="Auto" />
+                     
+                    </Grid.RowDefinitions>
+                  
+                    <TextBlock Grid.Row="0"
+                               Text=""
+                               FontSize="30"
+                               Name="Cond"
+                               Style="{StaticResource TextBlockStyle}" />
+
+                    <Grid Grid.Row="1"
+                          Margin="15">
+
+
+
+
+                        <DataGrid x:Name="TableGrid"
+                              Loaded="TableGrid_OnLoaded"
+                                  ColumnWidth="*"
+                                
+                                  FontSize="16"
+                                  IsReadOnly="True">
+
+                        </DataGrid>
+
+
+                    </Grid>
+
+                <TextBlock Grid.Row="2"
+                           Text="Колличесво Сутдентов: "
+                           FontSize="20"
+                           Name="CountUser"
+                          VerticalAlignment="Bottom"
+                           Style="{StaticResource TextBlockStyle}" />
+
+            </Grid>
+
+
+
+
+            </Border>
+
+
+
+        </Grid>
+
+</Window>

@@ -1,0 +1,69 @@
+﻿<Window x:Class="Cursach.ChooseLesson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cursach"
+        mc:Ignorable="d"
+        Title="ChooseLesson"
+        Height="320"
+        Width="300"
+        Loaded="FocusWindow_OnLoaded">
+    <Grid>
+        <StackPanel>
+       
+
+            <StackPanel x:Name="stackPanel">
+                <TextBlock Text="Выборите предметы:"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Top"
+                           FontSize="24"
+                           TextWrapping="Wrap" />
+
+                <CheckBox x:Name="MathButton"
+                          IsChecked="False"
+                          Content="Математика"
+                          FontSize="20"
+                          Margin="5" />
+
+
+
+                <CheckBox x:Name="PhithButton"
+                          IsChecked="False"
+                          FontSize="20"
+                          Margin="5"
+                          Content="Физика" />
+
+
+                <CheckBox IsChecked="False"
+                          x:Name="EngButton"
+                          FontSize="20"
+                          Margin="5"
+                          Content="Английский" />
+
+
+                <CheckBox IsChecked="False"
+                          x:Name="ProgButton"
+                          FontSize="20"
+                          Content="Программирование"
+                          Margin="5" />
+
+
+                <CheckBox IsChecked="False"
+                          x:Name="DdButton"
+                          FontSize="20"
+                          Content="Базы данных"
+                          Margin="5" />
+
+
+                <Button Margin="25"
+                        Name="SaveButton"
+                        Click="ButtonSave_Click"
+                        Cursor="Hand">Сохранить</Button>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
+
+

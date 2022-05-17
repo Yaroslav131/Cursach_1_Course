@@ -1,0 +1,38 @@
+﻿<Window x:Class="Cursach.LessonsListWind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cursach"
+        mc:Ignorable="d"
+        Title="LessonsListWind" Height="420" Width="350">
+    <Grid>
+        <StackPanel>
+            <Button Margin="25"
+                    Name="ButtonMath"
+                    Content="Математика"
+                    Click="ButtonMath_Click"
+                    Cursor="Hand" />
+            <Button Margin="25"
+                    Name="ButtonPhith_"
+                    Content="Физика"
+                    Click="ButtonPhith_Click"
+                    Cursor="Hand" />
+            <Button Margin="25"
+                    Name="ButtonEng"
+                    Content="Английский"
+                    Click="ButtonEng_Click"
+                    Cursor="Hand" />
+            <Button Margin="25"
+                    Name="ButtonProg"
+                    Content="Программирование"
+                    Click="ButtonProg_Click" />
+            <Button Margin="25"
+                    Name="ButtonBD"
+                    Content="Базы данных"
+                    Click="ButtonBD_Click"
+                    Cursor="Hand" />
+        </StackPanel>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AdminWind.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ChooseLesson.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DeleteUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FindLesson.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FindWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LessonsListWind.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MakeReport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ShowTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AdminWind.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ChooseLesson.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DeleteUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FindLesson.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FindWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LessonsListWind.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MakeReport.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ShowTable.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,252 @@
+﻿<Window x:Class="Cursach.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cursach"
+        mc:Ignorable="d"
+        Title="AddUser"
+       
+        Height="500"
+        Width="400">
+
+
+    <Window.Resources>
+
+        <Style x:Key="TextBlockStyle"
+               TargetType="TextBlock">
+            <Setter Property="FontFamily"
+                    Value="Calibri" />
+            <Setter Property="FontWeight"
+                    Value="Regular" />
+            <Setter Property="Foreground"
+                    Value="Black" />
+            <Setter Property="Padding"
+                    Value="12 0 0 0" />
+        </Style>
+
+
+        <Style x:Key="BorderStyle"
+               TargetType="Border">
+            <Setter Property="CornerRadius"
+                    Value="10" />
+            <Setter Property="BorderBrush"
+                    Value="Gray" />
+            <Setter Property="BorderThickness"
+                    Value="1" />
+            <Setter Property="Margin"
+                    Value="10 0 10 10" />
+            <Setter Property="Padding"
+                    Value="3" />
+        </Style>
+
+        <Style x:Key="TextBoxStyle"
+               TargetType="TextBox">
+            <Setter Property="VerticalAlignment"
+                    Value="Center" />
+            <Setter Property="FontSize"
+                    Value="16" />
+            <Setter Property="BorderThickness"
+                    Value="0" />
+            <Setter Property="Foreground"
+                    Value="Black" />
+            <Setter Property="CaretBrush"
+                    Value="Black" />
+            <Setter Property="SelectionBrush"
+                    Value="#FFD70F00" />
+            <Setter Property="Background"
+                    Value="Transparent" />
+
+
+        </Style>
+
+    </Window.Resources>
+
+   
+        <Grid>
+
+
+            <Border Padding="10"
+                    Grid.ColumnSpan="2">
+
+
+                <StackPanel>
+                    
+
+              
+                    <StackPanel Margin="15 ">
+                        <TextBlock Padding="12 0 0 0"
+                                   Name="TyepError"
+                                   FontSize="12"
+                                   FontFamily="Calibri"
+                                   FontWeight="Light"
+                                   Foreground="#FFFF1123" />
+
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Grid.Column="0"
+                                        Grid.ColumnSpan="3">
+                                <TextBlock Text="Имя студента"
+                                           FontSize="16"
+                                           Style="{StaticResource TextBlockStyle}" />
+                                <TextBlock Padding="12 0 0 0"
+                                           Name="NameError"
+                                           FontSize="12"
+                                           FontFamily="Calibri"
+                                           FontWeight="Light"
+                                           Foreground="#FFFF1123" />
+                                <Border Style="{StaticResource BorderStyle}">
+                                    <TextBox 
+                                             Name="Name"
+                                             Style="{StaticResource TextBoxStyle}" />
+                                </Border>
+                            </StackPanel>
+
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <StackPanel Grid.Column="0"
+                                        Grid.ColumnSpan="3">
+                                <TextBlock Text="Группа студента"
+                                           FontSize="16"
+                                           Style="{StaticResource TextBlockStyle}" />
+                                <TextBlock Padding="12 0 0 0"
+                                           Name="GroupeError"
+                                           FontSize="12"
+                                           FontFamily="Calibri"
+                                           FontWeight="Light"
+                                           Foreground="#FFFF1123" />
+                                <Border Style="{StaticResource BorderStyle}">
+                                    <TextBox 
+                                         Name="GroupeName"
+                                             Style="{StaticResource TextBoxStyle}" />
+                                </Border>
+                            </StackPanel>
+                        </Grid>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0"
+                                    Grid.ColumnSpan="3">
+                            <TextBlock Text="Логин студента"
+                                       FontSize="16"
+                                       Style="{StaticResource TextBlockStyle}" />
+                            <TextBlock Padding="12 0 0 0"
+                                       Name="LoginError"
+                                       FontSize="12"
+                                       FontFamily="Calibri"
+                                       FontWeight="Light"
+                                       Foreground="#FFFF1123" />
+                            <Border Style="{StaticResource BorderStyle}">
+                                <TextBox 
+                                         Name="Login"
+                                         Style="{StaticResource TextBoxStyle}" />
+                            </Border>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0"
+                                    Grid.ColumnSpan="3">
+                            <TextBlock Text="Пароль студента"
+                                       FontSize="16"
+                                       Style="{StaticResource TextBlockStyle}" />
+                            <TextBlock Padding="12 0 0 0"
+                                       Name="PasswordError"
+                                       FontSize="12"
+                                       FontFamily="Calibri"
+                                       FontWeight="Light"
+                                       Foreground="#FFFF1123" />
+                            <Border Style="{StaticResource BorderStyle}">
+                                <TextBox 
+                                         Name="Password"
+                                         Style="{StaticResource TextBoxStyle}" />
+                            </Border>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0"
+                                    Grid.ColumnSpan="3">
+                            <TextBlock Text="Средний бал студента"
+                                       FontSize="16"
+                                       Style="{StaticResource TextBlockStyle}" />
+                            <TextBlock Padding="12 0 0 0"
+                                       Name="RatingError"
+                                       FontSize="12"
+                                       FontFamily="Calibri"
+                                       FontWeight="Light"
+                                       Foreground="#FFFF1123" />
+                            <Border Style="{StaticResource BorderStyle}">
+                                <TextBox 
+                                         Name="Rating"
+                                         Style="{StaticResource TextBoxStyle}" />
+                            </Border>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid Margin=" 5 20 5  10"
+                          VerticalAlignment="Bottom">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Button Grid.Column="1"
+                                Width="85"
+                                HorizontalAlignment="Right"
+                              
+                                BorderThickness="0"
+                                Content="Add"
+                                Click="Button_Click"
+                                IsDefault="true"
+                                Name="AddStudent"
+                                Cursor="Hand" />
+                    </Grid>
+
+                </StackPanel>
+
+
+                </StackPanel>
+
+
+            </Border>
+
+
+        </Grid>
+
+</Window>
+
